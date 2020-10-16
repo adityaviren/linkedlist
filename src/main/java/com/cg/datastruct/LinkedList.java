@@ -26,8 +26,8 @@ class Node<T> {
     }
 }
 public class LinkedList<T> {
-    Node head = null;
-    Node tail = null;
+    private Node head = null;
+    private Node tail = null;
 
     public void add(T d) {
         Node node = new Node(d);
@@ -66,6 +66,10 @@ public class LinkedList<T> {
             tail=tempNode;
             tempNode=tempNode.getNext();
         }
+    }
+
+    public T peek(){
+        return (T) head.getData();
     }
 
     public void pop(){
@@ -112,4 +116,19 @@ public class LinkedList<T> {
             node = node.getNext();
         }
     }
+}
+class Stack<T> extends LinkedList{
+    Node top = null;
+
+    @Override
+    public void add(Object d) {
+        super.add(d);
+    }
+
+    @Override
+    public void printLinkedList() {
+        super.printLinkedList();
+    }
+
+
 }

@@ -15,6 +15,13 @@ public class LinkedListMain {
                 ll.popLast();
                 ll.delete(3);
                 ll.printLinkedList();
+                System.out.println();
+                Stack stack=new Stack();
+                stack.add(70);
+                stack.add(30);
+                stack.add(56);
+                stack.printLinkedList();
+
         }
 
         public static void createLinkedList(){
