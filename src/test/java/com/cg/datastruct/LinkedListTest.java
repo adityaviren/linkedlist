@@ -23,6 +23,8 @@ public class LinkedListTest {
         ll.add(99);
         ll.append(56);
         ll.insert(15,56);
+        boolean presentAfterInserting = ll.keyPresent(56);
+        Assert.assertTrue(presentAfterInserting);
         ll.pop();
         ll.popLast();
         boolean result = ll.keyPresent(30);
