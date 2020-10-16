@@ -81,15 +81,25 @@ public class LinkedList<T> {
         tail=temp;
     }
 
-
-        public void printLinkedList(){
-            Node node = head;
-            while (node != null) {
-                System.out.print(node.getData());
-                if (node != tail) {
-                    System.out.print(" -> ");
-                }
-                node = node.getNext();
+    public boolean keyPresent(T key){
+        Node temp=head;
+        while (temp !=null){
+            if(temp.getData()==key){
+                return true;
             }
+            temp=temp.getNext();
+        }
+        return false;
+    }
+
+    public void printLinkedList(){
+        Node node = head;
+        while (node != null) {
+            System.out.print(node.getData());
+            if (node != tail) {
+                System.out.print(" -> ");
+            }
+            node = node.getNext();
         }
     }
+}
