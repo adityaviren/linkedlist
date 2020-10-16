@@ -16,6 +16,7 @@ public class LinkedListMain {
                 ll.delete(3);
                 ll.printLinkedList();
                 System.out.println();
+
                 Stack stack=new Stack();
                 stack.add(70);
                 stack.add(30);
@@ -25,6 +26,13 @@ public class LinkedListMain {
                 System.out.println(stack.peek());
                 stack.pop();
                 stack.printLinkedList();
+                System.out.println();
+
+                Queue queue=new Queue();
+                queue.enqueue(56);
+                queue.enqueue(30);
+                queue.enqueue(70);
+                queue.printLinkedList();
 
         }
 

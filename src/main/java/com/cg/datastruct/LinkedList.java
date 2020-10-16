@@ -141,3 +141,8 @@ class Stack<T> extends LinkedList{
     }
 
 }
+class Queue<T> extends LinkedList{
+    public void enqueue(T data){
+        append(data);
+    }
+}
