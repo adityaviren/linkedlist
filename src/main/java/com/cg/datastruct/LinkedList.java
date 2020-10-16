@@ -62,6 +62,8 @@ public class LinkedList<T> {
             if(tempNode.getData() == beforeData ){
                 node.setNext(tempNode.getNext());
                 tempNode.setNext(node);
+                tail=tempNode;
+                break;
             }
             tail=tempNode;
             tempNode=tempNode.getNext();
@@ -90,6 +92,18 @@ public class LinkedList<T> {
             temp=temp.getNext();
         }
         return false;
+    }
+    public void delete(T data) {
+        Node tempNode = head;
+        while (tempNode != null){
+            if(tempNode.getNext().getData() == data ){
+                tempNode.setNext(tempNode.getNext().getNext());
+                tail=tempNode.getNext();
+                break;
+            }
+            tail=tempNode;
+            tempNode=tempNode.getNext();
+        }
     }
 
     public void printLinkedList(){

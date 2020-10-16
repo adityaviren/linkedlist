@@ -6,11 +6,14 @@ public class LinkedListMain {
                 LinkedList ll = new LinkedList();
                 ll.append(70);
                 ll.append(30);
+                ll.append(19);
+                ll.append(3);
                 ll.add(99);
                 ll.append(56);
                 ll.insert(15,56);
                 ll.pop();
                 ll.popLast();
+                ll.delete(3);
                 ll.printLinkedList();
         }
 
