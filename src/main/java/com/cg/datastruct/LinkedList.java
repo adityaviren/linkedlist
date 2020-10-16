@@ -145,4 +145,8 @@ class Queue<T> extends LinkedList{
     public void enqueue(T data){
         append(data);
     }
+
+    public void dequeue(){
+        pop();
+    }
 }
