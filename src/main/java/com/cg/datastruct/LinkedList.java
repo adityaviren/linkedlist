@@ -41,6 +41,20 @@ public class LinkedList<T> {
                 head = node;
         }
     }
+    public void append(T d) {
+        Node last = new Node(d);
+
+        Node node = head;
+        tail = last;
+        if (head == null) {
+            head = last;
+        } else {
+            while (node.getNext() != null) {
+                node = node.getNext();
+            }
+            node.setNext(last);
+        }
+    }
 
 
         public void printLinkedList(){
