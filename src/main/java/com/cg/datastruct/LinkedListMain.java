@@ -8,6 +8,7 @@ public class LinkedListMain {
                 ll.append(30);
                 ll.append(56);
                 ll.insert(15,56);
+                ll.pop();
                 ll.printLinkedList();
         }
 

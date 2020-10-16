@@ -68,6 +68,10 @@ public class LinkedList<T> {
         }
     }
 
+    public void pop(){
+        head=head.getNext();
+    }
+
 
         public void printLinkedList(){
             Node node = head;
