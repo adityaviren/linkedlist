@@ -25,3 +25,32 @@ class Node<T> {
         this.next=null;
     }
 }
+public class LinkedList<T> {
+    Node head = null;
+    Node tail = null;
+
+    public void add(T d) {
+        Node node = new Node(d);
+        if (tail == null) {
+            tail = node;
+        }
+        if (head == null) {
+                head = node;
+        } else {
+                node.setNext(head);
+                head = node;
+        }
+    }
+
+
+        public void printLinkedList(){
+            Node node = head;
+            while (node != null) {
+                System.out.print(node.getData());
+                if (node != tail) {
+                    System.out.print(" -> ");
+                }
+                node = node.getNext();
+            }
+        }
+    }
