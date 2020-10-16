@@ -55,6 +55,18 @@ public class LinkedList<T> {
             node.setNext(last);
         }
     }
+    public void insert(T data,T beforeData) {
+        Node node = new Node(data);
+        Node tempNode = head;
+        while (tempNode != null){
+            if(tempNode.getData() == beforeData ){
+                node.setNext(tempNode.getNext());
+                tempNode.setNext(node);
+            }
+            tail=tempNode;
+            tempNode=tempNode.getNext();
+        }
+    }
 
 
         public void printLinkedList(){
