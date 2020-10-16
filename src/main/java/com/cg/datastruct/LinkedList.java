@@ -130,5 +130,14 @@ class Stack<T> extends LinkedList{
         super.printLinkedList();
     }
 
+    @Override
+    public void pop() {
+        super.pop();
+    }
+
+    @Override
+    public Object peek() {
+        return super.peek();
+    }
 
 }

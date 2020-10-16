@@ -21,6 +21,10 @@ public class LinkedListMain {
                 stack.add(30);
                 stack.add(56);
                 stack.printLinkedList();
+                System.out.println();
+                System.out.println(stack.peek());
+                stack.pop();
+                stack.printLinkedList();
 
         }
 
